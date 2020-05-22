@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import { CounterUseContext } from './counterUseContext';
+import { CounterWithContext } from './counterWithContext';
+import { WindowWidthClass } from './windowWidthClass';
+import { WindowWidthUseStateEffect } from './windowWidthUseStateEffect';
+import { CounterClass } from './counterClass';
+import { CounterUseState } from './counterUseState';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <WindowWidthClass />
+            <WindowWidthUseStateEffect />
+            <CounterClass />
+            <CounterUseState />
+            <CounterWithContext />
+            <CounterUseContext />
+        </>
+    );
 }
 
 export default App;
